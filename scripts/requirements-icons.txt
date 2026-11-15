@@ -1,0 +1,5 @@
+# Packages for scripts/build-brand-assets.py (developer tooling, never shipped).
+# resvg-py: MPL-2.0, over resvg (Apache-2.0 or MIT)
+resvg-py==0.5.0
+# Pillow: MIT-CMU
+Pillow==12.3.0

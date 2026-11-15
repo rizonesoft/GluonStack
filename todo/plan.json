@@ -1,0 +1,14 @@
+{
+  "title": "GluonStack implementation plan",
+  "acceptance": "`docs/plans/2026-11-15-gluonstack-modernisation.md` (the owner's seven requests, the decisions table and the phases) and `docs/design/direction.md` for every surface.",
+  "phases": {
+    "0": "Repository and tooling",
+    "1": "Component platform",
+    "2": "Design system",
+    "3": "Control panel features",
+    "4": "Web application installer",
+    "5": "Installer and distribution",
+    "6": "Documentation and release",
+    "99": "Manual, operator only"
+  }
+}

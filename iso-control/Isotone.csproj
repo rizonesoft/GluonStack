@@ -5,7 +5,7 @@
     <TargetFramework>net9.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon>assets/isotone.ico</ApplicationIcon>
+    <ApplicationIcon>../assets/brand/gluonstack.ico</ApplicationIcon>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <StartupObject>Isotone.App</StartupObject>
     <AssemblyVersion>2025.10.6.31</AssemblyVersion>
@@ -28,11 +28,11 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
+  <!-- Brand assets and fonts have one source, the repository's assets/ folder (docs/design/SPEC.md). -->
   <ItemGroup>
-    <Resource Include="assets/isotone.ico" />
-    <Resource Include="assets/png/isotone_512.png">
-      <Link>assets/png/isotone_512.png</Link>
-    </Resource>
+    <Resource Include="../assets/brand/gluonstack.ico" Link="assets/gluonstack.ico" />
+    <Resource Include="../assets/brand/tray/*.ico" Link="assets/tray/%(Filename)%(Extension)" />
+    <Resource Include="../assets/fonts/*.ttf" Link="assets/fonts/%(Filename)%(Extension)" />
   </ItemGroup>
 
 </Project>

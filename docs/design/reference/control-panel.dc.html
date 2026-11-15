@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>C Field control panel</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#B6F36A}a:hover{color:#D3F9A4}
+</style>
+</helmet>
+<div style="width: 1280px; height: 800px; box-sizing: border-box; background: #07090A; color: #D7E3DC; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; display: flex; flex-direction: column">
+  <header style="display: flex; align-items: center; gap: 16px; padding: 0 20px; height: 56px; border-bottom: 1px solid #1F2724">
+    <svg width="28" height="28" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="10" fill="#0F1312"/><path d="M42.9 19 A17 17 0 1 0 49 32 L32 32" fill="none" stroke="#D7E3DC" stroke-width="6.5" stroke-linecap="round"/><circle cx="42.9" cy="19" r="7" fill="#B6F36A"/><circle cx="32" cy="32" r="7" fill="#B6F36A"/></svg>
+    <span style="font: 700 16px 'Space Grotesk', sans-serif">GluonStack</span>
+    <label style="flex-grow: 1; display: flex; align-items: center; gap: 10px; height: 44px; padding: 0 14px; border: 1px solid #1F2724; border-radius: 4px; background: #0F1312; color: #8FA39A"><span style="color: #B6F36A">&gt;</span><input type="text" aria-label="Command" value="start postgres" style="flex-grow: 1; background: transparent; border: 0; outline: 0; color: #D7E3DC; font: 13px 'JetBrains Mono', monospace"><span>Ctrl K</span></label>
+    <button style="min-height: 44px; padding: 0 16px; border-radius: 4px; border: 1px solid #1F2724; background: #0F1312; color: #D7E3DC; font: 500 13px 'JetBrains Mono', monospace">stop all</button>
+    <button style="min-height: 44px; padding: 0 16px; border-radius: 4px; border: 0; background: #B6F36A; color: #07090A; font: 500 13px 'JetBrains Mono', monospace">start all</button>
+  </header>
+
+  <div style="flex-grow: 1; display: flex; min-height: 0">
+    <nav aria-label="Services and sections" style="width: 340px; box-sizing: border-box; border-right: 1px solid #1F2724; display: flex; flex-direction: column">
+      <span style="padding: 16px 20px 8px; color: #8FA39A; font-size: 12px; letter-spacing: 0.08em">SERVICES 4/5</span>
+      <a href="#" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 20px; text-decoration: none; color: #D7E3DC"><span><span style="color: #B6F36A">&#9679;</span> apache</span><span style="color: #8FA39A">2.4.65 :80 :443</span></a>
+      <a href="#" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 20px; text-decoration: none; color: #D7E3DC"><span><span style="color: #B6F36A">&#9679;</span> php</span><span style="color: #8FA39A">8.4.11 module</span></a>
+      <a href="#" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 20px; text-decoration: none; color: #07090A; background: #B6F36A; font-weight: 500"><span>&#9679; mariadb</span><span>12.0.2 :3306</span></a>
+      <a href="#" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 20px; text-decoration: none; color: #D7E3DC"><span><span style="color: #FBBF24">&#9675;</span> postgres</span><span style="color: #8FA39A">18 :5432</span></a>
+      <a href="#" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 20px; text-decoration: none; color: #D7E3DC"><span><span style="color: #B6F36A">&#9679;</span> mailpit</span><span style="color: #8FA39A">1.27 :8025</span></a>
+      <span style="padding: 20px 20px 8px; color: #8FA39A; font-size: 12px; letter-spacing: 0.08em; border-top: 1px solid #1F2724">WORKSPACE</span>
+      <a href="#" style="display: flex; align-items: center; justify-content: space-between; min-height: 44px; padding: 0 20px; text-decoration: none; color: #D7E3DC"><span>sites</span><span style="color: #8FA39A">3</span></a>
+      <a href="#" style="display: flex; align-items: center; justify-content: space-between; min-height: 44px; padding: 0 20px; text-decoration: none; color: #D7E3DC"><span>databases</span><span style="color: #8FA39A">mariadb, postgres</span></a>
+      <a href="#" style="display: flex; align-items: center; justify-content: space-between; min-height: 44px; padding: 0 20px; text-decoration: none; color: #D7E3DC"><span>updates</span><span style="color: #5EEAD4">2 available</span></a>
+      <a href="#" style="display: flex; align-items: center; min-height: 44px; padding: 0 20px; text-decoration: none; color: #D7E3DC">logs</a>
+      <div style="flex-grow: 1"></div>
+      <a href="#" style="display: flex; align-items: center; min-height: 44px; padding: 0 20px; text-decoration: none; color: #D7E3DC; border-top: 1px solid #1F2724">settings</a>
+    </nav>
+
+    <main style="flex-grow: 1; min-width: 0; padding: 24px 28px; display: flex; flex-direction: column; gap: 20px">
+      <div style="display: flex; align-items: center; justify-content: space-between">
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <h1 style="margin: 0; font: 700 28px 'Space Grotesk', sans-serif; letter-spacing: -0.01em">MariaDB</h1>
+          <span style="color: #8FA39A">running, service GluonMariaDB, data mariadb\data\12.0</span>
+        </div>
+        <div style="display: flex; gap: 8px">
+          <button style="min-height: 44px; padding: 0 16px; border-radius: 4px; border: 1px solid #1F2724; background: #0F1312; color: #D7E3DC; font: 500 13px 'JetBrains Mono', monospace">restart</button>
+          <button style="min-height: 44px; padding: 0 16px; border-radius: 4px; border: 1px solid #1F2724; background: #0F1312; color: #D7E3DC; font: 500 13px 'JetBrains Mono', monospace">stop</button>
+          <button style="min-height: 44px; padding: 0 16px; border-radius: 4px; border: 1px solid #1F2724; background: #0F1312; color: #D7E3DC; font: 500 13px 'JetBrains Mono', monospace">backup now</button>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px">
+        <div style="border: 1px solid #1F2724; border-radius: 4px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px"><span style="color: #8FA39A; font-size: 12px">VERSION</span><span style="font-size: 15px">12.0.2</span><a href="#" style="color: #5EEAD4">update to [LATEST]</a></div>
+        <div style="border: 1px solid #1F2724; border-radius: 4px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px"><span style="color: #8FA39A; font-size: 12px">INSTALLED VERSIONS</span><span style="font-size: 15px">10.11  11.8  12.0</span><a href="#">switch version</a></div>
+        <div style="border: 1px solid #1F2724; border-radius: 4px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px"><span style="color: #8FA39A; font-size: 12px">CONNECTION</span><span style="font-size: 15px">root@127.0.0.1:3306</span><a href="#">copy connection string</a></div>
+      </div>
+
+      <div style="flex-grow: 1; min-height: 0; border: 1px solid #1F2724; border-radius: 4px; display: flex; flex-direction: column">
+        <div style="display: flex; align-items: center; justify-content: space-between; padding: 0 16px; min-height: 44px; border-bottom: 1px solid #1F2724"><span style="color: #8FA39A; font-size: 12px; letter-spacing: 0.08em">LOG, LIVE</span><span style="color: #8FA39A">logs\mariadb\error.log</span></div>
+        <div style="flex-grow: 1; padding: 14px 16px; line-height: 1.8; color: #AFC0B7; background: #0A0D0C">
+          [Note] InnoDB: Buffer pool(s) load completed<br>
+          [Note] Server socket created on IP: '127.0.0.1'<br>
+          [Note] mariadbd.exe: ready for connections.<br>
+          <span style="color: #FBBF24">[Warning] Aborted connection 12 to db: 'shop' user: 'root'</span><br>
+          [Note] Version: '12.0.2-MariaDB'  port: 3306<br>
+          <span style="color: #B6F36A">&#9608;</span>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

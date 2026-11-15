@@ -202,7 +202,7 @@ _pkginfo.txt
 # =====================================
 # IDE files - Created by editors
 # =====================================
-.claude/
+.claude/settings.local.json
 .idea/
 *.swp
 *.swo
@@ -216,3 +216,8 @@ desktop.ini
 
 # Keep the .gitignore file
 !.gitignore
+# =====================================
+# Agent tooling state (run guard, todo cache)
+# =====================================
+/build/
+__pycache__/

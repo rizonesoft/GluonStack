@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>C Field other surfaces</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#B6F36A}a:hover{color:#D3F9A4}
+</style>
+</helmet>
+<div style="width: 1280px; height: 800px; box-sizing: border-box; padding: 40px; background: #030404; color: #D7E3DC; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px">
+
+  <div style="display: flex; flex-direction: column; gap: 12px">
+    <span style="color: #8FA39A">Splash</span>
+    <div style="flex-grow: 1; background: #07090A; border: 1px solid #1F2724; border-radius: 4px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+      <div style="display: flex; align-items: center; gap: 14px">
+        <svg width="44" height="44" viewBox="0 0 64 64" aria-hidden="true"><rect x="1" y="1" width="62" height="62" rx="10" fill="#0F1312" stroke="#1F2724" stroke-width="2"/><path d="M42.9 19 A17 17 0 1 0 49 32 L32 32" fill="none" stroke="#D7E3DC" stroke-width="5" stroke-linecap="round"/><circle cx="42.9" cy="19" r="5.5" fill="#B6F36A"/><circle cx="32" cy="32" r="5.5" fill="#B6F36A"/></svg>
+        <span style="font: 700 28px 'Space Grotesk', sans-serif; letter-spacing: -0.02em">GluonStack</span>
+      </div>
+      <div style="line-height: 1.9; color: #AFC0B7">
+        <span style="color: #B6F36A">ok</span>  apache   :80 :443<br>
+        <span style="color: #B6F36A">ok</span>  php      8.4.11<br>
+        <span style="color: #5EEAD4">..</span>  mariadb  starting<br>
+        <span style="color: #8FA39A">--  postgres waiting</span><br>
+        <span style="color: #8FA39A">--  mailpit  waiting</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 12px">
+    <span style="color: #8FA39A">Tray menu and tray icon states</span>
+    <div style="flex-grow: 1; display: flex; gap: 32px; align-items: flex-start">
+      <div style="width: 280px; background: #0F1312; border: 1px solid #1F2724; border-radius: 4px; display: flex; flex-direction: column">
+        <div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; border-bottom: 1px solid #1F2724"><span style="font: 600 14px 'Space Grotesk', sans-serif">GluonStack</span><span style="color: #8FA39A">4/5 up</span></div>
+        <button style="min-height: 44px; padding: 0 16px; text-align: left; border: 0; background: #B6F36A; color: #07090A; font: 500 13px 'JetBrains Mono', monospace">open control panel</button>
+        <button style="min-height: 44px; padding: 0 16px; text-align: left; border: 0; background: transparent; color: #D7E3DC; font: 13px 'JetBrains Mono', monospace">start all</button>
+        <button style="min-height: 44px; padding: 0 16px; text-align: left; border: 0; background: transparent; color: #D7E3DC; font: 13px 'JetBrains Mono', monospace">stop all</button>
+        <button style="min-height: 44px; padding: 0 16px; text-align: left; border: 0; background: transparent; color: #D7E3DC; font: 13px 'JetBrains Mono', monospace">open localhost</button>
+        <button style="min-height: 44px; padding: 0 16px; text-align: left; border: 0; background: transparent; color: #D7E3DC; font: 13px 'JetBrains Mono', monospace">open mail inbox</button>
+        <button style="min-height: 44px; padding: 0 16px; text-align: left; border: 0; border-top: 1px solid #1F2724; background: transparent; color: #D7E3DC; font: 13px 'JetBrains Mono', monospace">exit</button>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 20px">
+        <div style="display: flex; align-items: center; gap: 12px"><svg width="24" height="24" viewBox="0 0 64 64" role="img" aria-label="All running"><rect width="64" height="64" rx="12" fill="#B6F36A"/><path d="M44 18 A18 18 0 1 0 50 32 L32 32" fill="none" stroke="#07090A" stroke-width="9" stroke-linecap="round"/></svg><span>all running: phosphor tile, whole G</span></div>
+        <div style="display: flex; align-items: center; gap: 12px"><svg width="24" height="24" viewBox="0 0 64 64" role="img" aria-label="Some stopped"><rect width="64" height="64" rx="12" fill="#FBBF24"/><path d="M44 18 A18 18 0 1 0 50 32 L32 32" fill="none" stroke="#07090A" stroke-width="9" stroke-linecap="round" stroke-dasharray="16 14"/></svg><span>some stopped: caution tile, dashed G</span></div>
+        <div style="display: flex; align-items: center; gap: 12px"><svg width="24" height="24" viewBox="0 0 64 64" role="img" aria-label="All stopped"><rect x="3" y="3" width="58" height="58" rx="10" fill="#07090A" stroke="#8FA39A" stroke-width="6"/><path d="M44 20 A16 16 0 1 0 48 32 L32 32" fill="none" stroke="#8FA39A" stroke-width="8" stroke-linecap="round"/></svg><span>all stopped: outline tile, grey G</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 12px">
+    <span style="color: #8FA39A">Installer</span>
+    <div style="flex-grow: 1; background: #07090A; border: 1px solid #1F2724; border-radius: 4px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+      <div style="display: flex; gap: 20px; color: #8FA39A"><span>01 location</span><span style="color: #B6F36A">02 components</span><span>03 ports</span><span>04 install</span></div>
+      <h2 style="margin: 8px 0 0; font: 600 20px 'Space Grotesk', sans-serif">Choose components</h2>
+      <label style="display: flex; align-items: center; gap: 10px; min-height: 32px"><input type="checkbox" checked disabled style="width: 18px; height: 18px"> apache, php, control panel</label>
+      <label style="display: flex; align-items: center; gap: 10px; min-height: 32px"><input type="checkbox" checked style="width: 18px; height: 18px; accent-color: #B6F36A"> mariadb</label>
+      <label style="display: flex; align-items: center; gap: 10px; min-height: 32px"><input type="checkbox" checked style="width: 18px; height: 18px; accent-color: #B6F36A"> postgres</label>
+      <label style="display: flex; align-items: center; gap: 10px; min-height: 32px"><input type="checkbox" checked style="width: 18px; height: 18px; accent-color: #B6F36A"> mailpit</label>
+      <div style="flex-grow: 1"></div>
+      <div style="display: flex; justify-content: flex-end; gap: 8px">
+        <button style="min-height: 44px; padding: 0 18px; border-radius: 4px; border: 1px solid #1F2724; background: #0F1312; color: #D7E3DC; font: 500 13px 'JetBrains Mono', monospace">back</button>
+        <button style="min-height: 44px; padding: 0 18px; border-radius: 4px; border: 0; background: #B6F36A; color: #07090A; font: 500 13px 'JetBrains Mono', monospace">next</button>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 12px">
+    <span style="color: #8FA39A">Web dashboard at localhost</span>
+    <div style="flex-grow: 1; background: #07090A; border: 1px solid #1F2724; border-radius: 4px; padding: 24px; display: flex; flex-direction: column; gap: 16px">
+      <div style="display: flex; align-items: baseline; justify-content: space-between">
+        <span style="font: 700 22px 'Space Grotesk', sans-serif">It works.</span>
+        <span style="color: #8FA39A">localhost, served by GluonStack</span>
+      </div>
+      <div style="display: flex; flex-direction: column; border: 1px solid #1F2724; border-radius: 4px">
+        <a href="#" style="display: flex; justify-content: space-between; align-items: center; min-height: 48px; padding: 0 16px; text-decoration: none; border-bottom: 1px solid #1F2724"><span>/phpmyadmin</span><span style="color: #8FA39A">mariadb</span></a>
+        <a href="#" style="display: flex; justify-content: space-between; align-items: center; min-height: 48px; padding: 0 16px; text-decoration: none; border-bottom: 1px solid #1F2724"><span>/adminer</span><span style="color: #8FA39A">postgres, sqlite</span></a>
+        <a href="#" style="display: flex; justify-content: space-between; align-items: center; min-height: 48px; padding: 0 16px; text-decoration: none"><span>:8025</span><span style="color: #8FA39A">mail inbox</span></a>
+      </div>
+      <div style="line-height: 1.8; color: #AFC0B7">php 8.4.11, apache 2.4.65<br>docroot www\default</div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
