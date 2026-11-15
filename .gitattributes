@@ -112,3 +112,11 @@ docs/ export-ignore
 *.ps1 linguist-detectable=true
 docs/* linguist-documentation
 config/* linguist-vendored=false
+# Git hooks run under sh on every platform
+scripts/hooks/* text eol=lf
+
+# Brand assets and fonts
+*.ico binary
+*.bmp binary
+*.png binary
+*.ttf binary
