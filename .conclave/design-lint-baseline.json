@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "counts": {
+    "iso-control/App.xaml": {
+      "color-literal": 19,
+      "spacing-radius-literal": 4
+    },
+    "iso-control/Converters/ServiceStateColorConverter.cs": {
+      "color-literal": 1
+    },
+    "iso-control/MainWindow.xaml": {
+      "color-literal": 26,
+      "font-size-literal": 13,
+      "spacing-radius-literal": 34
+    },
+    "iso-control/SplashScreen.xaml": {
+      "color-literal": 20,
+      "font-size-literal": 5,
+      "spacing-radius-literal": 11
+    },
+    "iso-control/ViewModels/DashboardViewModel.cs": {
+      "color-literal": 15
+    },
+    "iso-control/Views/ComingSoonView.xaml": {
+      "font-size-literal": 2,
+      "spacing-radius-literal": 3
+    },
+    "iso-control/Views/DashboardView.xaml": {
+      "color-literal": 42,
+      "font-family-literal": 6,
+      "font-size-literal": 50,
+      "spacing-radius-literal": 102
+    },
+    "iso-control/Views/DatabaseView.xaml": {
+      "font-size-literal": 2,
+      "spacing-radius-literal": 7
+    },
+    "iso-control/Views/LogsView.xaml": {
+      "font-family-literal": 1,
+      "font-size-literal": 2,
+      "spacing-radius-literal": 7
+    },
+    "iso-control/Views/PhpView.xaml": {
+      "color-literal": 35,
+      "font-family-literal": 1,
+      "font-size-literal": 11,
+      "spacing-radius-literal": 35
+    },
+    "iso-control/Views/ServicesView.xaml": {
+      "font-size-literal": 1,
+      "spacing-radius-literal": 6
+    },
+    "iso-control/Views/SettingsView.xaml": {
+      "color-literal": 1,
+      "font-size-literal": 5,
+      "spacing-radius-literal": 31
+    },
+    "iso-control/Windows/ErrorDetailsWindow.xaml": {
+      "color-literal": 29,
+      "font-family-literal": 3,
+      "font-size-literal": 13,
+      "spacing-radius-literal": 30
+    },
+    "iso-control/Windows/ErrorDetailsWindow.xaml.cs": {
+      "spacing-radius-literal": 2
+    }
+  },
+  "history": [
+    {
+      "at": "2026-11-17T07:39:33Z",
+      "reason": "Initial shrink-only baseline on design-lint rollout",
+      "added": {
+        "iso-control/App.xaml:color-literal": 19,
+        "iso-control/App.xaml:spacing-radius-literal": 4,
+        "iso-control/Converters/ServiceStateColorConverter.cs:color-literal": 1,
+        "iso-control/MainWindow.xaml:color-literal": 26,
+        "iso-control/MainWindow.xaml:font-size-literal": 13,
+        "iso-control/MainWindow.xaml:spacing-radius-literal": 34,
+        "iso-control/SplashScreen.xaml:color-literal": 20,
+        "iso-control/SplashScreen.xaml:font-size-literal": 5,
+        "iso-control/SplashScreen.xaml:spacing-radius-literal": 11,
+        "iso-control/ViewModels/DashboardViewModel.cs:color-literal": 15,
+        "iso-control/Views/ComingSoonView.xaml:font-size-literal": 2,
+        "iso-control/Views/ComingSoonView.xaml:spacing-radius-literal": 3,
+        "iso-control/Views/DashboardView.xaml:color-literal": 42,
+        "iso-control/Views/DashboardView.xaml:font-family-literal": 6,
+        "iso-control/Views/DashboardView.xaml:font-size-literal": 50,
+        "iso-control/Views/DashboardView.xaml:spacing-radius-literal": 102,
+        "iso-control/Views/DatabaseView.xaml:font-size-literal": 2,
+        "iso-control/Views/DatabaseView.xaml:spacing-radius-literal": 7,
+        "iso-control/Views/LogsView.xaml:font-family-literal": 1,
+        "iso-control/Views/LogsView.xaml:font-size-literal": 2,
+        "iso-control/Views/LogsView.xaml:spacing-radius-literal": 7,
+        "iso-control/Views/PhpView.xaml:color-literal": 35,
+        "iso-control/Views/PhpView.xaml:font-family-literal": 1,
+        "iso-control/Views/PhpView.xaml:font-size-literal": 11,
+        "iso-control/Views/PhpView.xaml:spacing-radius-literal": 35,
+        "iso-control/Views/ServicesView.xaml:font-size-literal": 1,
+        "iso-control/Views/ServicesView.xaml:spacing-radius-literal": 6,
+        "iso-control/Views/SettingsView.xaml:color-literal": 1,
+        "iso-control/Views/SettingsView.xaml:font-size-literal": 5,
+        "iso-control/Views/SettingsView.xaml:spacing-radius-literal": 31,
+        "iso-control/Windows/ErrorDetailsWindow.xaml:color-literal": 29,
+        "iso-control/Windows/ErrorDetailsWindow.xaml:font-family-literal": 3,
+        "iso-control/Windows/ErrorDetailsWindow.xaml:font-size-literal": 13,
+        "iso-control/Windows/ErrorDetailsWindow.xaml:spacing-radius-literal": 30,
+        "iso-control/Windows/ErrorDetailsWindow.xaml.cs:spacing-radius-literal": 2
+      }
+    }
+  ]
+}
